@@ -1,0 +1,23 @@
+services:
+  web:
+    build: .
+    env_file: .env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    volumes:
+      - staticfiles:/app/staticfiles
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: qlibrary
+      POSTGRES_USER: qlibrary
+      POSTGRES_PASSWORD: qlibrary
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
+  staticfiles:
