@@ -111,4 +111,4 @@ Untuk mewariskan akses ke admin baru: superuser mengundang lewat `POST /api/admi
 ## Referensi Lengkap
 
 - [`BACKEND_SPEC.md`](BACKEND_SPEC.md) — arsitektur storage, ERD, daftar API lengkap, alasan setiap keputusan desain, dan checklist fase pengerjaan.
-- [`qlibrary-frontend`](../qlibrary-frontend) — konsumen API ini (Next.js).
+- [`qlibrary-frontend`](https://github.com/Qudsiyyah-lms/qlibrary-frontend) — konsumen API ini (Next.js).
